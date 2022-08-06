@@ -106,8 +106,8 @@ function setup() {
 }
 
 function draw() {
-	volhistory.push( amp.getLevel() );
-	var vol = volhistory.;
+	var vol = amp.getLevel();
+	volhistory.push( vol );
 	document.body.style.setProperty('--vol', vol);
 	const songTime = song.currentTime();
 	const rotation = Math.max( map( vol, .4, 1, 0, 0.1 ), 0 );
