@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ghost</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="../lib/p5.js"></script>
+	<!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script src="../lib/p5.dom.js"></script>-->
+	<script src="srt.js"></script>
+	<script src="../lib/p5.sound.js"></script>
+	<script src="particle.js"></script>
+	<script src="ghost-el.js"></script>
+</head>
+<body>
+
+<!-- SRT goes here -->
+<div id="srt_text" style="display: none;">
+1
+00:00:05,800 --> 00:00:07,500
+Why're you looking here
+
+2
+00:00:07,400 --> 00:00:09,700
+Like I'm no face
+
+3
+00:00:09,700 --> 00:00:11,000
+Now I'm hearing all
+
+3
+00:00:11,000 --> 00:00:12,500
+the things you never told me
+
+4
+00:00:12,500  --> 00:00:14,200
+Guess I'm no face
+
+5
+00:00:14,200 --> 00:00:16,720
+Chasing a lost place
+
+6
+00:00:16,720 --> 00:00:19,600
+I'm slipping hold me
+</div>
+
+<div id="wrap">
+
+
+	<div id="controls">
+		<button onclick="play()">Play</button>
+		<button onclick="reset()">Reset</button>
+		<button onclick="jump(5.2)">Lyrics</button>
+		<button onclick="jump(60)">Jump 1min</button>
+		<button onclick="jump(120)">Jump 2min</button>
+	</div>
+
+	<div id="scene">
+		<div id="subtitles"></div>
+		<div id="album-art">
+			<img src="ghost-art.jpeg" alt="Ghost Album art">
+		</div>
+	</div>
+
+</div>
+
+<script src="animation.js"></script>
+
+</body>
+</html>
