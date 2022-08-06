@@ -8,13 +8,15 @@
 	<title>Ghost</title>
 	<link rel="stylesheet" href="style.css">
 
-	<script src="../lib/p5.js"></script>
+<!--	<script src="../lib/p5.js"></script>-->
 	<!-- uncomment lines below to include extra p5 libraries -->
 	<!--<script src="../lib/p5.dom.js"></script>-->
+<!--	<script src="../lib/p5.sound.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.js"></script>
+
 	<script src="srt.js"></script>
-	<script src="../lib/p5.sound.js"></script>
 	<script src="particle.js"></script>
-	<script src="ghost-el.js"></script>
 </head>
 <body>
 
@@ -50,8 +52,6 @@ I'm slipping hold me
 </div>
 
 <div id="wrap">
-
-
 	<div id="controls">
 		<button onclick="play()">Play</button>
 		<button onclick="reset()">Reset</button>
